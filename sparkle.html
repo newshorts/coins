@@ -19,7 +19,7 @@ function init() {
 	// create a new stage and point it at our canvas:
 	canvas = document.getElementById("testCanvas");
 	stage = new Stage(canvas);
-	
+
 	// attach mouse handlers directly to the source canvas.
 	// better than calling from canvas tag for cross browser compatibility:
 	canvas.onmousemove = moveCanvas;
@@ -29,13 +29,13 @@ function init() {
 	// and the registration point of the frame
 	// it will auto-calculate the number of frames from the image dimensions and loop them
 	var data = {
-		images: ["assets/sparkle_21x23.png"],
+		images: ["images/sparkle_21x23.png"],
 		frames: {width:21,height:23,regX:10,regY:11}
 	}
-	
+
 	// set up an animation instance, which we will clone
 	bmpAnim = new BitmapAnimation(new SpriteSheet(data));
-
+        
 	// add a text object to output the current FPS:
 	fpsLabel = new Text("-- fps","bold 14px Arial","#FFF");
 	stage.addChild(fpsLabel);
@@ -43,10 +43,9 @@ function init() {
 	fpsLabel.y = 20;
 
 	// start the tick and point it at the window so we can do some work before updating the stage:
-	Ticker.setFPS(20);
+	Ticker.setFPS(30);
 	Ticker.addListener(window);
 }
-
 
 function tick() {
 	// loop through all of the active sparkles on stage:
@@ -78,15 +77,18 @@ function tick() {
 
 //sparkle explosion
 function clickCanvas(e) {
+    console.debug('detected the click event');
 	addSparkles(Math.random()*200+100|0, stage.mouseX, stage.mouseY,2);
 }
 
 //sparkle trail
 function moveCanvas(e) {
+    console.debug('moving event');
 	addSparkles(Math.random()*2+1|0, stage.mouseX, stage.mouseY,1);
 }
 
 function addSparkles(count, x, y, speed) {
+        console.debug('adding sparkles');
 	//create the specified number of sparkles
 	for (var i=0; i<count; i++) {
 		// clone the original sparkle, so we don't need to set shared properties:
@@ -95,6 +97,7 @@ function addSparkles(count, x, y, speed) {
 		// set display properties:
 		sparkle.x = x;
 		sparkle.y = y;
+                
 		//sparkle.rotation = Math.random()*360;
 		sparkle.alpha = Math.random()*0.5+0.5;
 		sparkle.scaleX = sparkle.scaleY = Math.random()+0.3;
