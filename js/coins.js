@@ -21,7 +21,7 @@ var Coins = function() {
             // and the registration point of the frame
             // it will auto-calculate the number of frames from the image dimensions and loop them
             var data = {
-                    images: ["//localhost.com/GSP/clients/nintendo/coin-orgy/production/images/sparkle_21x23.png"],
+                    images: ["//localhost.com/GSP/clients/nintendo/sparkle/production/images/sparkle_21x23.png"],
                     frames: {width:21,height:23,regX:10,regY:11}
             }
             

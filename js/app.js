@@ -28,7 +28,7 @@ var App = function() {
                 var c = new Coins();
                 c.init();
             }
-            coins.src = '//localhost.com/GSP/clients/nintendo/coin-orgy/production/js/coins.js';
+            coins.src = '//localhost.com/GSP/clients/nintendo/sparkle/production/js/coins.js';
             document.getElementsByTagName('body')[0].appendChild(coins);
         }
         easel.src = 'http://code.createjs.com/easeljs-0.4.2.min.js';
@@ -41,8 +41,8 @@ var App = function() {
     
     var cursorTrack = function() {
         $('body').css({'cursor' : 'none'});
-        $('body').append('<img id="cursor" src="//localhost.com/GSP/clients/nintendo/coin-orgy/production/images/cursor.png" alt="cursor" />');
-        $('body').append('<link href="//localhost.com/GSP/clients/nintendo/coin-orgy/production/css/demoStyles.css" rel="stylesheet" type="text/css" />');
+        $('body').append('<img id="cursor" src="//localhost.com/GSP/clients/nintendo/sparkle/production/images/cursor.png" alt="cursor" />');
+        $('body').append('<link href="//localhost.com/GSP/clients/nintendo/sparkle/production/css/demoStyles.css" rel="stylesheet" type="text/css" />');
         $('body').append('');
         $('body').on('mousemove', function(evt) {
             $('#cursor').css({
@@ -73,7 +73,7 @@ if (!document.getElementById('coins-style')) {
         var objCSS = objHead[0].appendChild(document.createElement('link'));
         objCSS.id = 'coins-style';
         objCSS.rel = 'stylesheet';
-        objCSS.href = '//localhost.com/GSP/clients/nintendo/coin-orgy/production/css/coins.css';
+        objCSS.href = '//localhost.com/GSP/clients/nintendo/sparkle/production/css/coins.css';
         objCSS.type = 'text/css';
     }
 }
