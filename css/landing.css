@@ -1,0 +1,58 @@
+/* 
+    Document   : landing
+    Created on : May 30, 2012, 8:00:31 PM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+#coins-wrap {
+    position: relative;
+}
+
+#coins-frame {
+    border: none;
+    overflow: hidden;
+}
+
+#coins-background-wrapper {
+    position: relative;
+    width: 1952px;
+    height: 1306px;
+    margin: 0 auto;
+    top: -6px;
+/*    margin-left: 50%;
+    left: -976px;*/
+}
+
+#coins-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1952px;
+    height: 1306px;
+    background: url(../images/landing/bg.jpg) scroll no-repeat white;
+}
+
+#coins-bookmark {
+    display: block;
+    width: 707px;
+    height: 185px;
+    position: absolute;
+    top: 620px;
+    right: 172px;
+}

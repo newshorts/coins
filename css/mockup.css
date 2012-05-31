@@ -1,0 +1,89 @@
+/* 
+    Document   : mockup
+    Created on : May 30, 2012, 6:42:54 PM
+    Author     : mike_newell
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#coins-spacer {
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-color: transparent;
+}
+
+#coins-header-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url(../images/top-bar-repeat.jpg) scroll repeat-x;
+}
+
+#coins-header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left: 0;
+    background: url(../images/top-bar.png) 0 0 scroll no-repeat transparent;
+}
+
+#coins-mario-head {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+#coins-on-off-button {
+    position: absolute;
+    top: 50px;
+    left: 240px;
+    width: 129px;
+    height: 69px;
+}
+
+#coins-on-off-text {
+    position: absolute;
+    top: 70px;
+    left: 394px;
+    width: 45px;
+    height: 30px;
+}
+
+.coins-on-text {
+    background: url(../images/on-placeholder.png) scroll no-repeat transparent;
+}
+
+.coins-off-text {
+    background: url(../images/on-placeholder.png) scroll no-repeat transparent;
+}
+
+
+#coins-score {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 392px;
+    height: 77px;
+    background: url(../images/score-placeholder.png) 0 0 scroll no-repeat transparent;
+}
+
+.coins-on-button {
+    background: url(../images/on-button.png) 0 0 scroll no-repeat transparent;
+}
+
+.coins-off-button {
+    background: url(../images/off-button.png) 0 0 scroll no-repeat transparent;
+}
