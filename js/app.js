@@ -34,9 +34,6 @@ var App = function() {
         easel.src = 'http://code.createjs.com/easeljs-0.4.2.min.js';
         document.getElementsByTagName('body')[0].appendChild(easel);
         
-            
-        
-        
     }
     
     var cursorTrack = function() {
