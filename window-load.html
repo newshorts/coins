@@ -1,0 +1,33 @@
+<!--
+Dream Clients site Design
+
+Mike Newell
+Maker
+Goodby Silverstein and Partners
+
+Design By David Byrd
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dream Clients</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    </head>
+    <body>
+        <div>
+            <a href="javascript:(function(){console.dir(this);})();">ListenLoad</a>
+<!--            <a href=""><iframe src="window-load-frame.html"></iframe></a>-->
+        </div>
+        <script>
+            (function() {
+                console.dir(this);
+            })();
+            
+            (function(){setInterval(function(){alert('logged');},5000);})();
+            
+            (function(){console.dir(this);})();
+        </script>
+    </body>
+</html>
